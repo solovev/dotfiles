@@ -1,0 +1,67 @@
+[shell]
+program = "zsh"
+# args = ["--login"]
+args = ["-l", "-c", "tmux attach || tmux"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+decorations = 'None'
+dynamic_padding = true
+padding = { x = 5, y = 5 }
+opacity = 0.75
+option_as_alt = 'OnlyLeft'
+
+[colors]
+cursor = { text = '#000000', cursor = '#fcba03' }
+
+[colors.primary]
+background = '#1E5D8A'
+foreground = '#f8f8f8'
+dim_foreground = '#f8f8f8'
+bright_foreground = '#f8f8f8'
+
+[colors.bright]
+black   = '#0d0d0d'
+red     = '#de3c3c'
+green   = '#718e3f'
+yellow  = '#fcba03'
+blue    = '#1E5D8A'
+magenta = '#ff5eda'
+cyan    = '#69c6c3'
+white   = '#f8f8f8'
+
+[colors.normal]
+black   = '#0d0d0d'
+red     = '#de3c3c'
+green   = '#718e3f'
+yellow  = '#fcba03'
+blue    = '#1E5D8A'
+magenta = '#ff5eda'
+cyan    = '#69c6c3'
+white   = '#f8f8f8'
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "UbuntuMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "UbuntuMono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "UbuntuMono Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "UbuntuMono Nerd Font Mono"
+style = "Regular"
+
+[keyboard]
+bindings = [
+  { key = "E", mods = "Alt", chars = "\r" },
+]
